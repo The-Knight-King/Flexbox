@@ -11,7 +11,7 @@
             color: white;
         }
 
-        .parent-1, .parent-2 {
+        .parent-1 {
             display: flex;
             /* By default flex-direction is set to be row */
             /* Justify content helps to move the data on x-axis i.e. horizontally */
@@ -20,6 +20,11 @@
             /* By default justify content is flex-start so nothing is changed here */
             /* align-items helps us to align the thing on cross-axis(i.e. y-axis) vertically and by default it is set to stretch so, no change can be observed*/
             /* align-items: center; */
+        }
+
+        .parent-2 {
+            display: flex;
+            justify-content: space-around;
         }
 
         .parent-1 div, .parent-2 div {
@@ -43,6 +48,18 @@
             /* width: 25%; */
             flex: 1;
             order: 3;
+        }
+
+        .item-4 {
+            width: 25%;
+        }
+
+        .item-5 {
+            width: 25%;
+        }
+
+        .item-6 {
+            width: 25%;
         }
 
     </style>
