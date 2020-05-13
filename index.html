@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Basics</title>
     <style>
-        
         body {
             background: #51546A;
             color: white;
         }
 
-        .parent-1 {
-            display: flex;
-            /* By default flex-direction is set to be row */
-            /* Justify content helps to move the data on x-axis i.e. horizontally */
-            /* justify-content: center; */
-            /* Justify content can be applied to the parent class not to the children */
-            /* By default justify content is flex-start so nothing is changed here */
-            /* align-items helps us to align the thing on cross-axis(i.e. y-axis) vertically and by default it is set to stretch so, no change can be observed*/
-            /* align-items: center; */
+        @media(min-width: 550px) {
+            /* Here firstly when we minimized the viewport we saw that the item-1, item-2 and item-3 were stacked properly on each other and were taking the full width of the viewport but the items-4,5 and 6 weren't because we have given them 25% width of the viewport. So, here we are gonna pass the width differently with the help of flexbox property named as 'flex-basis' */
+            .parent-1 {
+                display: flex;
+                /* By default flex-direction is set to be row */
+                /* Justify content helps to move the data on x-axis i.e. horizontally */
+                /* justify-content: center; */
+                /* Justify content can be applied to the parent class not to the children */
+                /* By default justify content is flex-start so nothing is changed here */
+                /* align-items helps us to align the thing on cross-axis(i.e. y-axis) vertically and by default it is set to stretch so, no change can be observed*/
+                /* align-items: center; */
+            }
+
+            .parent-2 {
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
-        .parent-2 {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .parent-1 div, .parent-2 div {
+        .parent-1 div,
+        .parent-2 div {
             border: 1px solid #ccc;
             padding: 10px;
         }
@@ -51,19 +55,20 @@
         }
 
         .item-4 {
-            width: 25%;
+            flex-basis: 50%;
+            /* When flex-direction is row, flex-basis controls width but when flex-direction is column, flex-basis controls height. For more information google flex-basis or see flex-basis vs width*/
         }
 
         .item-5 {
-            width: 25%;
+            flex-basis: 25%;
         }
 
         .item-6 {
-            width: 25%;
+            flex-basis: 50%;
         }
-
     </style>
 </head>
+
 <body>
     <div class="parent-1">
         <div class="item-1">
@@ -94,4 +99,5 @@
         </div>
     </div>
 </body>
+
 </html>
