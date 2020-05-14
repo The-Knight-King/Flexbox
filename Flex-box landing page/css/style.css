@@ -61,7 +61,29 @@ a {
     ul.topnav li.dropdownLink {
         display: block;
         position: absolute;
-        top: 7px;
+        top: 8px;
         right: 12px;
+    }
+
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+    }
+
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    ul.topnav.responsive li {
+        position: relative;
+        top: 30px;
+        right: 22px;
+    }
+
+    ul.topnav.responsive li a.navlink {
+        display: block;
+        line-height: 2;
     }
 }
