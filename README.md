@@ -1,4 +1,2 @@
 # Flexbox
-For Staging changes only.
-*This repository is only created for the sole purpose of staging the changes in the code.*
-In this we are completing the flexbox.
+*In this repository we are working on flex-box which is a CSS-3 web layout model.*
