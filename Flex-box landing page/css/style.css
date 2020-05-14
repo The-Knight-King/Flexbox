@@ -13,12 +13,24 @@ body {
 .navbar {
     display: flex;
     padding: 10px;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .brand,
 .navlink {
     text-transform: uppercase;
     color: #303137;
+}
+
+.brand {
+    font-size: 25px;
+}
+
+.sensei {
+    color: #66b6d3;
 }
 
 .topnav {
@@ -32,4 +44,5 @@ body {
 .navlink {
     text-decoration: none;
     padding-left: 20px;
+    font-size: 20px;
 }
