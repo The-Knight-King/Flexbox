@@ -15,7 +15,8 @@ body {
     padding: 10px;
 }
 
-.brand, .navlink {
+.brand,
+.navlink {
     text-transform: uppercase;
     color: #303137;
 }
@@ -27,8 +28,8 @@ body {
     list-style: none;
 }
 
-.topnav, .navlink {
+.topnav,
+.navlink {
     text-decoration: none;
     padding-left: 20px;
 }
-
