@@ -53,6 +53,24 @@ a {
     display: none;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headershot-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.headshot {
+    border-radius: 50%;
+    max-width: 200px;
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     ul.topnav li a.navlink {
         display: none;
