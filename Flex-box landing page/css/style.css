@@ -67,8 +67,18 @@ header {
 
 .headshot {
     border-radius: 50%;
-    max-width: 200px;
+    margin-left: 25px;
+    max-width: 130px;
     width: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.services {
+    background-color: #f1f3fa;
+    padding: 4rem 1rem;
 }
 
 @media (max-width: 768px) {
