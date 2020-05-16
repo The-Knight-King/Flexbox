@@ -140,7 +140,33 @@ h2 {
     padding: .8rem 3rem;
     border: none;
     border-radius: 50px;
-    box-shadow:0 5px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.section-header {
+    text-align: center;
+    font-size: large;
+    padding: 4rem 0 4rem;
+}
+
+.portfolio-wrapper {
+    display: flex;
+}
+
+.portfolio-box {
+    width: 250px;
+    height: 250px;
+    background-color: #f1f3fa;
+    transition: .2s ease-in-out;
+}
+
+.portfolio-box:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.portfolio-objects {
+    max-width: 250px;
 }
 
 @media (max-width: 768px) {
