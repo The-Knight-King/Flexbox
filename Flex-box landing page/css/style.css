@@ -127,6 +127,22 @@ h2 {
     font-size: 18px;
 }
 
+.quote-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.quote-btn {
+    color: white;
+    background-color: #66b6d3;
+    font-size: 20px;
+    padding: .8rem 3rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
 @media (max-width: 768px) {
     ul.topnav li a.navlink {
         display: none;
