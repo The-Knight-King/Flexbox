@@ -210,6 +210,22 @@ h2 {
     .portfolio-wrapper {
         text-align: center;
     }
+
+    .media-object {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .icon-left,
+    .icon-right {
+        order: 1;
+    }
+
+    .blurb-wrapper-left,
+    .blurb-wrapper-right {
+        order: 2;
+        padding-top: 2.5rem;
+    }
 }
 
 @media (max-width: 599px) {
@@ -217,7 +233,7 @@ h2 {
         display: block;
     }
 
-    .portfolio-object{
+    .portfolio-object {
         margin: auto;
         padding-bottom: 2rem;
     }
