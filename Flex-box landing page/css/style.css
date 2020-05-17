@@ -265,6 +265,14 @@ form label {
         order: 2;
         padding-top: 2.5rem;
     }
+
+    .form-group {
+        display: flex;
+    }
+    
+    .submit-btn-wrapper {
+        text-align: center;
+    }
 }
 
 @media (max-width: 599px) {
